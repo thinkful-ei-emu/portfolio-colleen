@@ -7,9 +7,15 @@ body {
   font-size: 20px;
   text-align: center;
   color: rgb(26, 29, 31);
+  padding: 3%; 
+  
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
+  margin-left: 5%;
 }
 
 nav, footer {
@@ -45,23 +51,6 @@ footer {
   padding: 1em;
   color: rgb(237, 236, 241)
 }
-
-@media all and (max-width:800px) {
-  .nav {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px){
-  .nav {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .nav a {
-    text-align: center;
-    padding: 10px;
-  }
-}
 header {
   padding: 15%;
 }
@@ -94,10 +83,11 @@ p {
   display: flex;
   max-width: 600px;
   flex-direction: column;
+
 }
 
 .screenshot {
-  width: 300px;
+  max-width: 300px;
   align-self: center;
 }
 
@@ -114,6 +104,69 @@ button {
   justify-content: space-around;
 }
 .contact > img {
-  max-height: 100px;
+  max-height: 80px;
   margin-top: 1em;
+}
+
+@media all and (max-width:800px) {
+  .nav {
+    justify-content: space-around;
+  }
+  header {
+    padding-top: 20%;
+  }
+  
+  .project {
+    max-width: 300px;
+    padding: 20px;
+  }
+  .contact {
+    flex-direction: row wrap;
+    justify-content: center;
+    
+  }
+  .contact > img {
+    max-width: 80px;
+    max-height: 70px;
+    margin: auto;
+    padding: 2%;
+  }
+}
+
+@media all and (max-width: 600px){
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .nav a {
+    text-align: center;
+    padding: 10px;
+  }
+  header {
+    padding-top: 40%;
+  }
+  .projects {
+    justify-content: center;
+  }
+
+  .contact {
+    flex-direction: row wrap;
+    justify-content: center;
+    
+  }
+  .contact > img {
+    max-width: 60px;
+    max-height: 50px;
+    margin: auto;
+    padding: 2%;
+  }
+}
+
+
+
+
+@media all and (max-width: 350px){
+  header {
+    padding-top: 45%;
+  }
 }
