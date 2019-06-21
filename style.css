@@ -3,11 +3,11 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
   text-align: center;
-  color: rgb(26, 29, 31);
-  padding: 3%; 
+   
+  background-color:#F2FFF9;
   
 }
 
@@ -15,14 +15,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5%;
 }
 
 nav, footer {
   padding: 2%;
-  background-color: rgb(146, 146, 155);
-  
+  background-color: rgb(70, 121, 121);
+
 }
+
+
 
 nav {
   position: fixed;
@@ -51,22 +52,50 @@ footer {
   padding: 1em;
   color: rgb(237, 236, 241)
 }
+
+.nav a:hover {
+  background-color:rgb(49, 83, 83);
+}
 header {
-  padding: 15%;
+  padding: 15% 10%;
+  
+  
+}
+
+h1, h2 {
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 0.15em;
+  color: rgb(46, 1, 42);
+}
+
+mark {
+ background: rgb(255, 125, 158);
+ color: rgb(37, 1, 34);
+ padding: 1em;
+}
+
+.highlight {
+  padding: 0em;
+}
+
+.headline {
+  color: rgb(46, 38, 15);
+  text-align: center;
+  font-size: 150%;
+}
+h3 {
+  font-size: 150%;
+}
+p {
+  font-size: 100%;
+  line-height: 1.5em;
+  text-align: left;
 }
 
 section {
   min-height: 200px;
   padding: 5%;
-}
-
-section:nth-child(even) {
-  background-color: rgb(224, 224, 231)
-}
-
-p {
-  text-align: left;
-  line-height: 30px;
+  background-color: #F2FFF9;
 }
 
 .projects {
@@ -96,14 +125,14 @@ button {
   margin: 3px;
   border: none;
   color: rgb(241, 240, 247);
-  background-color: rgb(32, 33, 43);
+  background-color: rgb(36, 25, 49);
 }
 
 .contact {
   display: flex;
   justify-content: space-around;
 }
-.contact > img {
+.contact > a > img {
   max-height: 80px;
   margin-top: 1em;
 }
@@ -115,17 +144,19 @@ button {
   header {
     padding-top: 20%;
   }
-  
+  .projects{
+    flex-direction: column;
+  }
   .project {
-    max-width: 300px;
-    padding: 20px;
+    max-width: 800px;
+    padding: 5%;
   }
   .contact {
     flex-direction: row wrap;
-    justify-content: center;
+    
     
   }
-  .contact > img {
+  .contact > a >img {
     max-width: 80px;
     max-height: 70px;
     margin: auto;
@@ -144,21 +175,20 @@ button {
   }
   header {
     padding-top: 40%;
+    
   }
   .projects {
     justify-content: center;
   }
 
-  .contact {
-    flex-direction: row wrap;
-    justify-content: center;
-    
-  }
-  .contact > img {
+  .contact > a >img {
     max-width: 60px;
     max-height: 50px;
     margin: auto;
-    padding: 2%;
+    padding: 5%;
+  }
+  p {
+    font-size: 100%;
   }
 }
 

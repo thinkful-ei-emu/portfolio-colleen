@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand|Roboto&display=swap" rel="stylesheet">
   <link type="text/css" href="style.css" rel="stylesheet">
   <title>Colleen Higgins</title>
 </head>
 <body>
   <nav role="navigation">
     <ul class="nav">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Connect</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
   <main role="main">
@@ -21,11 +22,11 @@
      <h1>Colleen Higgins</h1>
     </header>
     <section>
-        <p class="headline">I am a full-stack web developer based out of Seattle, WA and am currently a student in Thinkful's Engineering Immersion program.
-        I am fueled by problems needing solving (and strong coffee).</p>
+        <p class="headline"><mark class="highlight">Full-stack web developer based out of Seattle, WA.</br>Currently a student in Thinkful's Engineering Immersion program.
+        </br> Fueled by problems needing solving (and strong coffee).</br>Lover of dogs, rugby, and ice cream.</mark></p>
     </section>
     <section>
-      <h3>About</h3>
+      <h2 id="about">About</h2>
     </section>
     <section>
         <p>
@@ -44,7 +45,7 @@
           </p>
     </section>
     <section>
-      <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
     </section>
     <div class='projects'>
       <section class="project">
@@ -78,18 +79,21 @@
           <button>View Project</button>
       </section>
   </div>
+  <section>
+    <h2 id="connect">Let's Connect</h2>
+  </section>
     <section>
-      <h2>Let's Connect</h2>
       <div class ="contact">
-      <img id="github" src="logos/GitHub-Mark-120px-plus.png" alt="github logo and link to linkedin">
-      <img id="linkedin" src="logos/LI-In-Bug.png" alt="linkedin logo and link to linkedin">
-      <img id="email" src="logos/emaillogo.png" alt="email logo and link to send email">
+      <a href="https://github.com/coggins87"><img id="github" src="logos/GitHub-Mark-120px-plus.png" alt="github logo and link to github"></a>
+      <a href="https://www.linkedin.com/in/colleen-higgins-993bb912/"><img id="linkedin" src="logos/LI-In-Bug.png" alt="linkedin logo and link to linkedin"></a>
+      <a href="email:colleenhiggins87@gmail.com"><img id="email" src="logos/emaillogo.png" alt="email logo and link to send email"></a>
     </div>
     </section>
   </div>
   </main>
 
   <footer role="contentinfo"></footer>
-  
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
