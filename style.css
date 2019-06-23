@@ -152,6 +152,10 @@ button:hover {
   display: flex;
   justify-content: space-around;
 }
+#email {
+  text-align: center;
+  
+}
 .contact > a > img {
   max-height: 80px;
   margin-top: 1em;
