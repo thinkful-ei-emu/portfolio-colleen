@@ -119,6 +119,9 @@ section {
   max-width: 300px;
   align-self: center;
 }
+#quizapp {
+  height: 12%;
+}
 
 button {
   padding: 2.75%;
@@ -126,6 +129,10 @@ button {
   border: none;
   color: rgb(241, 240, 247);
   background-color: rgb(36, 25, 49);
+}
+
+button:hover {
+  background-color: rgb(75, 51, 102);
 }
 
 .contact {
