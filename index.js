@@ -6,7 +6,7 @@ function main (){
   };
 
   document.getElementById('quiz-app-page').onclick = function () {
-    location.href = '#';
+    location.href = 'https://coggins87.github.io/quizapp/';
   };
 }
 
