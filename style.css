@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+  height: 100%
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
+  height: 100%;
 }
 
 nav, footer {
@@ -44,6 +49,7 @@ nav {
   margin: 0;
   display: flex;
   justify-content: flex-end;
+  z-index: 1000;
 }
 
 .nav a {
@@ -71,10 +77,20 @@ h1, h2 {
   font-family: 'Shrikhand', cursive;
   letter-spacing: 0.15em;
   color: rgb(46, 1, 42);
+
 }
 
 h2 {
   margin-top: 5%;
+}
+
+h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 200px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 mark {
  background: rgb(255, 125, 158);
