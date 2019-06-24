@@ -152,7 +152,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
 }
-#email {
+.email {
   text-align: center;
   
 }
