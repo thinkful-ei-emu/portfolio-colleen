@@ -9,9 +9,17 @@ function main (){
     location.href = 'https://coggins87.github.io/quizapp/';
   };
 
-  $("header .nav a[href!=#]").each(function(){
-    $($(this).attr("href")).css("padding-top", "40px").prev().css("margin-bottom", "-40px");
-});
+  document.getElementById('amrapp-app-client-github').onclick = function () {
+    location.href = 'https://github.com/thinkful-ei-emu/colleen-capstone-client';
+  };
+  document.getElementById('amrapp-app-api-github').onclick = function () {
+    location.href = 'https://github.com/thinkful-ei-emu/amrap-api-colleen';
+  };
+  document.getElementById('amrapp-app-page').onclick = function () {
+    location.href = 'https://amrap-client-colleen.colleenhiggins87.now.sh/';
+  };
+
+  
 }
 
 
