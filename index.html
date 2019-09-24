@@ -1,104 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Shrikhand|Roboto&display=swap" rel="stylesheet">
-  <link type="text/css" href="style.css" rel="stylesheet">
-  <title>Colleen Higgins</title>
-</head>
-<body>
-  <nav role="navigation">
-    <ul class="nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#connect">Connect</a></li>
-    </ul>
-  </nav>
-  <main role="main">
-    <div class="container">
-    <header role="banner">
-     <h1>Colleen Higgins</h1>
-     <img id='self' src='logos/self.JPG' alt="self portrait of Colleen, smiling with background of leaves">
-    </header>
-    <section>
-        <p class="headline"><mark class="highlight">Full-stack web developer based out of Seattle, WA.<br/>Currently a student in Thinkful's Engineering Immersion program.
-        <br/> Fueled by problems needing solving (and strong coffee).<br/>Lover of dogs, rugby, and ice cream.</mark></p>
-    </section>
-    <section>
-      <h2 id="about">About</h2>
-    </section>
-    <section>
-        <p>
-            I grew up loving computers and video games, and fondly remember the first time I connected to the internet and the emotions that
-          came with it. But my journey from techy-child to now isn't straightforward. My work background is diverse, with experience in
-          retail, outdoor leadership and environmental conservation/education, film production, dog-walking, and most recently, receiving
-          my clinical doctorate and working as a licensed physical therapist. Each experience has provided me with rich life experiences
-          and gains in self-knowledge, and have aided in guiding me to this career that most matches my skills, passions, and interests;
-          guiding me back to my childhood delight in playing with computers.
-        </p>
-        <p>
-            I pride myself in my innate ability to communicate and develop connections with people of all ages and backgrounds.
-          My natural creativity combined with my analytical skills developed through my experience as a physical therapist has proved useful 
-          in programming and learning new programming languages. As a web developer I hope to make meaningful content that has the ability to
-          positively impact people’s lives and their communities.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shrikhand|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" href="style.css" rel="stylesheet" />
+    <title>Colleen Higgins</title>
+  </head>
+  <body>
+   
+
+      <nav role="navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+  
+    <main role="main">
+      <header>        <h1 class="animated fadeIn">Colleen Higgins</h1>
+      </header>
+
+      <div class="container intro">
+        <section role="banner">
+          <img
+            id="self"
+            src="logos/self.JPG"
+            alt="self portrait of Colleen, smiling with background of leaves"
+          />
+          <p class="headline">
+            <mark class="highlight"
+              >Full-stack web developer based out of Seattle, WA.<br />Currently
+              a student in Thinkful's Engineering Immersion program. <br />
+              Fueled by problems needing solving (and strong coffee).<br />Lover
+              of dogs, rugby, and ice cream.</mark
+            >
           </p>
-    </section>
-    <section>
-      <h2 id="projects">Projects</h2>
-    </section>
-    <div class='projects'>
-        <section class="project">
+        </section>
+
+        <section>
+          <h2 id="about">About</h2>
+        </section>
+        <section>
+          <p>
+            I grew up loving computers and video games, and fondly remember the
+            first time I connected to the internet and the emotions that came
+            with it. But my journey from techy-child to now isn't
+            straightforward. My work background is diverse, with experience in
+            retail, outdoor leadership and environmental conservation/education,
+            film production, dog-walking, and most recently, receiving my
+            clinical doctorate and working as a licensed physical therapist.
+            Each experience has provided me with rich life experiences and gains
+            in self-knowledge, and have aided in guiding me to this career that
+            most matches my skills, passions, and interests; guiding me back to
+            my childhood delight in playing with computers.
+          </p>
+          <p>
+            I pride myself in my innate ability to communicate and develop
+            connections with people of all ages and backgrounds. My natural
+            creativity combined with my analytical skills developed through my
+            experience as a physical therapist has proved useful in programming
+            and learning new programming languages. As a web developer I hope to
+            make meaningful content that has the ability to positively impact
+            people’s lives and their communities.
+          </p>
+        </section>
+        <section>
+          <h2 id="projects">Projects</h2>
+        </section>
+        <div class="projects">
+          <section class="project">
             <h3>AMRApp</h3>
-            <img class="screenshot" id="amrapp" src="logos/amrapscreenshot.png" alt="screenshot of amrapp app image">
+            <img
+              class="screenshot"
+              id="amrapp"
+              src="logos/amrapscreenshot.png"
+              alt="screenshot of amrapp app image"
+            />
             <p>
-              AMRApp is a from-scratch full-stack responsive random workout generator where registered users are able to manage private workout lists.
-              </p>
-            <p>Technologies used: React.js, Node.js, Express, PostgreSQL, knex, Enzyme, Mocha, Chai</p>
-             <!--  <div class='logos'>
+              AMRApp is a from-scratch full-stack responsive random workout
+              generator where registered users are able to manage private
+              workout lists.
+            </p>
+            <p>
+              Technologies used: React.js, Node.js, Express, PostgreSQL, knex,
+              Enzyme, Mocha, Chai
+            </p>
+            <!--  <div class='logos'>
                 <img class="logo" src="logos/HTML5_Logo_512.png" alt="HTML logo">
                 <img class="logo" src="logos/csslogo.png" alt="CSS logo">
                 <img class="logo" src="logos/logo_javascript.png" alt="javascript logo">
               </div> -->
-             <button id="amrapp-app-client-github">View Code: Front-End</button> 
-             <button id="amrapp-app-api-github">View Code: Back-End</button> 
-             <button id="amrapp-app-page">View Project</button>
+            <button id="amrapp-app-client-github">View Code: Front-End</button>
+            <button id="amrapp-app-api-github">View Code: Back-End</button>
+            <button id="amrapp-app-page">View Project</button>
           </section>
-      <section class="project">
-        <h3>Quiz App</h3>
-        <img class="screenshot" id="quizapp" src="logos/quizappscreenshot.png" alt="screenshot quiz app image">
-        <p>
-          Quiz App is a lightweight web application using the Open Trivia DB API to generate a quiz game of random trivia questions and 
-          keeps score.
-          </p>
-          <p>Technologies used: HTML, CSS, Javascript, webpack</p>
-        <!--   <div class='logos'>
+          <section class="project">
+            <h3>Quiz App</h3>
+            <img
+              class="screenshot"
+              id="quizapp"
+              src="logos/quizappscreenshot.png"
+              alt="screenshot quiz app image"
+            />
+            <p>
+              Quiz App is a lightweight web application using the Open Trivia DB
+              API to generate a quiz game of random trivia questions and keeps
+              score.
+            </p>
+            <p>Technologies used: HTML, CSS, Javascript, webpack</p>
+            <!--   <div class='logos'>
             <img class="logo" src="logos/HTML5_Logo_512.png" alt="HTML logo">
             <img class="logo" src="logos/csslogo.png" alt="CSS logo">
             <img class="logo" src="logos/logo_javascript.png" alt="javascript logo">
           </div> -->
-       <button id="quiz-app-github">View Code</button> 
-        <button id="quiz-app-page">View Project</button>
-      </section>
-      
-      </div>
-    <section>
-      <h2 id="connect">Let's Connect</h2>
-    </section>
-    <section>
-        <p class="email"><a href="email:colleenhiggins87@gmail.com">colleenhiggins87@gmail.com</a></p>
-      <div class ="contact">
-        <a href="https://github.com/coggins87"><img id="github" src="logos/GitHub-Mark-120px-plus.png" alt="github logo and link to github"></a>
-        <a href="https://www.linkedin.com/in/colleen-higgins-993bb912/"><img id="linkedin" src="logos/LI-In-Bug.png" alt="linkedin logo and link to linkedin"></a>
-        <a href="email:colleenhiggins87@gmail.com"><img id="email" src="logos/emaillogo.png" alt="email logo and link to send email"></a>
+            <button id="quiz-app-github">View Code</button>
+            <button id="quiz-app-page">View Project</button>
+          </section>
         </div>
-    </section>
-    </div>
-  </main>
+        <section>
+          <h2 id="connect">Let's Connect</h2>
+        </section>
+        <section>
+          <p class="email">
+            <a href="email:colleenhiggins87@gmail.com"
+              >colleenhiggins87@gmail.com</a
+            >
+          </p>
+          <div class="contact">
+            <a href="https://github.com/coggins87"
+              ><img
+                id="github"
+                src="logos/GitHub-Mark-120px-plus.png"
+                alt="github logo and link to github"
+            /></a>
+            <a href="https://www.linkedin.com/in/colleen-higgins-993bb912/"
+              ><img
+                id="linkedin"
+                src="logos/LI-In-Bug.png"
+                alt="linkedin logo and link to linkedin"
+            /></a>
+            <a href="email:colleenhiggins87@gmail.com"
+              ><img
+                id="email"
+                src="logos/emaillogo.png"
+                alt="email logo and link to send email"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  <footer role="contentinfo">&copy; Colleen Higgins 2019</footer>
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
-</body>
+    <footer role="contentinfo">&copy; Colleen Higgins 2019</footer>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
