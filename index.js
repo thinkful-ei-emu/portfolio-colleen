@@ -19,6 +19,16 @@ function main (){
     location.href = 'https://amrap-client-colleen.colleenhiggins87.now.sh/';
   };
 
+  document.getElementById('sr-app-client-github').onclick = function () {
+    location.href = 'https://github.com/thinkful-ei-emu/spaced-repetition-MAC-client';
+  };
+  document.getElementById('sr-app-api-github').onclick = function () {
+    location.href = 'https://github.com/thinkful-ei-emu/spaced-repetition-MAC-api';
+  };
+  document.getElementById('sr-app-page').onclick = function () {
+    location.href = 'https://spaced-repetition.mac-thinkful.now.sh/';
+  };
+
  
   $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta >= 0) {
