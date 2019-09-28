@@ -4,14 +4,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   background-color:#F2FFF9;
   
 }
-section {
-  display:inherit;
-}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -66,21 +62,23 @@ header {
   
 }
 
+
 .intro {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
   
 }
 
 #self {
-max-width: 350px;
+max-height: 350px;
 border-radius: 50%;
 padding-top: 1%;
 }
 
  h1, h2 {
-  font-family: 'Shrikhand', cursive;
-  letter-spacing: 0.15em;
+/*   font-family: 'Shrikhand', cursive;
+ */  letter-spacing: 0.15em;
   color: rgb(46, 1, 42);
   margin-top: 5%;
 }

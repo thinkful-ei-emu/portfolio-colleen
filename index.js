@@ -19,7 +19,15 @@ function main (){
     location.href = 'https://amrap-client-colleen.colleenhiggins87.now.sh/';
   };
 
-  
+ 
+  $(window).bind('mousewheel', function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+       $('header').fadeIn()
+    }
+    else {
+        $('header').fadeOut()
+    }
+});
 }
 
 
