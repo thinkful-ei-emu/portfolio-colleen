@@ -32,7 +32,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: rgb(70, 121, 121);
 
 }
 
@@ -56,11 +55,33 @@ nav {
 .nav a:hover {
   background-color:rgb(49, 83, 83);
 }
-header {
-  margin-top: 10%;
+.header-top {
+  height: 100vh;
+  background-image: url('./logos/89475.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: inherit;
+  width: 100vw;
+  text-align: center;
+
   
 }
+.hide{
+  display: none;
+}
+#name {
+  height: 100vh;
+  background-image: url('./logos/89475.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+h1 {
+  font-size: 76px;
+}
+
 
 
 .intro {
@@ -70,6 +91,13 @@ header {
   
 }
 
+#info{
+  color: white;
+  font-family: 'Stint Ultra Expanded', cursive;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #self {
 max-height: 350px;
 border-radius: 50%;
@@ -77,9 +105,9 @@ padding-top: 1%;
 }
 
  h1, h2 {
-/*   font-family: 'Shrikhand', cursive;
- */  letter-spacing: 0.15em;
-  color: rgb(46, 1, 42);
+   font-family: 'Stint Ultra Expanded', cursive;
+  letter-spacing: 0.15em;
+  color: rgb(236, 233, 236);
   margin-top: 5%;
 }
 

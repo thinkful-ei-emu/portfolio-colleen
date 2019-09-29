@@ -1,6 +1,9 @@
 /*disable eslint*/
 /*use global $*/
 function main (){
+ $("#info").hide()
+setTimeout(function(){$("#info").fadeIn()}, 3000)
+
   document.getElementById('quiz-app-github').onclick = function () {
     location.href = 'https://github.com/thinkful-ei-emu/ex-module2-blake-colleen';
   };
@@ -38,6 +41,10 @@ function main (){
         $('header').fadeOut()
     }
 });
+
+
+
+
 }
 
 
