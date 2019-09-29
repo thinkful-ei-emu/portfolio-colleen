@@ -4,8 +4,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   text-align: center;
-  background-color:#F2FFF9;
-  
+  background-color:rgb(31, 32, 32);
+  color: rgb(245, 245, 245)
 }
 
 .container {
@@ -55,11 +55,9 @@ nav {
 .nav a:hover {
   background-color:rgb(49, 83, 83);
 }
-.header-top {
+#home-top {
   height: 100vh;
-  background-image: url('./logos/89475.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+
   display: inherit;
   width: 100vw;
   text-align: center;
@@ -71,15 +69,15 @@ nav {
 }
 #name {
   height: 100vh;
-  background-image: url('./logos/89475.jpg');
-  background-size: 100%;
+  background-image: url('./logos/16236.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
     justify-content: center;
 }
 h1 {
-  font-size: 76px;
+  font-size: 4em;
 }
 
 
@@ -121,16 +119,8 @@ h2::before {
   visibility: hidden; 
   pointer-events: none;
 }
-mark {
- background: rgb(255, 125, 158);
- color: rgb(37, 1, 34);
- padding: 1em;
-}
 
 
-.highlight {
-  padding: 0em;
-}
 
 .headline {
   color: rgb(46, 38, 15);
@@ -149,7 +139,6 @@ p {
 section {
   min-height: 200px;
   padding: 2.5% 5% 0 5%;
-  background-color: #F2FFF9;
 }
 
 .projects {
@@ -186,11 +175,12 @@ button {
   margin: 3px;
   border: none;
   color: rgb(241, 240, 247);
-  background-color: rgb(36, 25, 49);
+  background-color: rgb(72, 94, 78);
 }
 
 button:hover {
-  background-color: rgb(75, 51, 102);
+  background-color: rgb(127, 160, 136);
+  color: black;
 }
 
 .contact {
