@@ -31,6 +31,15 @@ setTimeout(function(){$("#info").fadeIn()}, 3000)
   document.getElementById('sr-app-page').onclick = function () {
    window.open('https://spaced-repetition.mac-thinkful.now.sh/');
   };
+  document.getElementById('st-app-client-github').onclick = function () {
+    window.open('https://github.com/thinkful-ei-emu/RAMbo-tracker-client');
+   };
+   document.getElementById('st-app-api-github').onclick = function () {
+    window.open('https://github.com/thinkful-ei-emu/RAMbo-tracker-Server');
+   };
+   document.getElementById('st-app-page').onclick = function () {
+    window.open('https://symptomtracker.rambo.now.sh/');
+   };
 
  
   $(window).bind('mousewheel', function(event) {
