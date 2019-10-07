@@ -1,13 +1,17 @@
-
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 100%;
   text-align: center;
-  background-color:rgb(31, 32, 32);
-  color: rgb(245, 245, 245)
+  background-color: rgb(31, 32, 32);
+  color: rgb(245, 245, 245);
 }
-
+/* .animated {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+} */
 .container {
   display: flex;
   flex-direction: column;
@@ -16,15 +20,18 @@ body {
   height: 100%;
 }
 
-nav, footer {
+nav,
+footer {
   padding: 2%;
-
 }
 
 footer {
   color: rgb(170, 170, 170);
   text-align: right;
 }
+/* header {
+  padding-top: 45%;
+} */
 
 nav {
   position: fixed;
@@ -32,16 +39,17 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-
+  background-color: rgb(31, 32, 32);
 }
 
-
-
+ul {
+  padding-inline-start: 0;
+}
 .nav {
   list-style: none;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   z-index: 1000;
 }
 
@@ -49,78 +57,68 @@ nav {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: rgb(237, 236, 241)
+  color: rgb(237, 236, 241);
 }
 
 .nav a:hover {
-  background-color:rgb(49, 83, 83);
+  background-color: rgb(49, 83, 83);
 }
 #home-top {
-  height: 100vh;
+  height: 50vh;
 
   display: inherit;
-  width: 100vw;
+  /*   width: 100vw;
+ */
   text-align: center;
-
-  
 }
-.hide{
+.hide {
   display: none;
 }
 #name {
-  height: 100vh;
-  background-image: url('./logos/16236.jpg');
+  height: 50vh;
+  background-image: url("./logos/16236.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-    justify-content: center;
+  justify-content: center;
 }
-h1 {
-  font-size: 4em;
-}
-
-
 
 .intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-#info{
+#info {
   color: white;
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: "Stint Ultra Expanded", cursive;
   margin: 0 auto;
   text-align: center;
 }
 
 #self {
-max-height: 350px;
-border-radius: 50%;
-padding-top: 1%;
+  max-width: 250px;
+  border-radius: 50%;
+  padding-top: 1%;
 }
 
- h1, h2 {
-   font-family: 'Stint Ultra Expanded', cursive;
+h1,
+h2 {
+  font-family: "Stint Ultra Expanded", cursive;
   letter-spacing: 0.15em;
   color: rgb(236, 233, 236);
   margin-top: 5%;
 }
 
-
-
-h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -100px; 
-  height: 200px; 
-  visibility: hidden; 
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 200px;
+  visibility: hidden;
   pointer-events: none;
 }
-
-
 
 .headline {
   color: rgb(46, 38, 15);
@@ -145,7 +143,6 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
 .projects > * {
   flex: 1;
@@ -155,7 +152,6 @@ section {
   display: flex;
   max-width: 600px;
   flex-direction: column;
-
 }
 
 .screenshot {
@@ -163,24 +159,33 @@ section {
   align-self: center;
 }
 
-
 .logo {
   max-height: 60px;
   padding: 0 2% 0 2%;
 }
 
-
 button {
   padding: 2.75%;
   margin: 3px;
   border: none;
-  color: rgb(241, 240, 247);
-  background-color: rgb(55, 73, 60);
+  color: rgb(31, 32, 32);
+  border-radius: 5px;
+  align-self: center;
 }
-
+.project-btn{
+background-color: rgb(238, 231, 131);
+padding: 2.75% 4.2%
+}
+.front-btn{
+background-color: rgb(214, 134, 97);
+}
+.back-btn{
+background-color: rgb(127, 160, 136);
+}
 button:hover {
-  background-color: rgb(127, 160, 136);
-  color: black;
+  background-color:  rgb(31, 32, 32);
+  color: rgb(245, 245, 245);
+  font-weight: 600
 }
 
 .contact {
@@ -189,25 +194,48 @@ button:hover {
 }
 .email {
   text-align: center;
-  
 }
 .contact > a > img {
   max-height: 80px;
   margin-top: 1em;
 }
 
-@media all and (max-width:800px) {
+@media all and (min-width: 801px) {
+  #home-top {
+    height: 100vh;
+  }
+  #name {
+    height: 100vh;
+  }
+  nav {
+    background-color: none;
+  }
   .nav {
+    flex-direction: row;
     justify-content: space-around;
+    justify-content: flex-end;
   }
   header {
-    padding-top: 20%;
+    padding-top: 5%;
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+@media all and (max-width: 800px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: flex-end;
+  }
+  header {
+    padding-top: 10%;
   }
 
   section {
     min-height: 150px;
   }
-  .projects{
+  .projects {
     flex-direction: column;
   }
   .project {
@@ -219,10 +247,8 @@ button:hover {
   }
   .contact {
     flex-direction: row wrap;
-    
-    
   }
-  .contact > a >img {
+  .contact > a > img {
     max-width: 80px;
     max-height: 70px;
     margin: auto;
@@ -230,7 +256,7 @@ button:hover {
   }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
   .nav {
     flex-flow: column wrap;
     padding: 0;
@@ -241,7 +267,6 @@ button:hover {
   }
   header {
     padding-top: 40%;
-    
   }
   section {
     min-height: 100px;
@@ -254,10 +279,10 @@ button:hover {
     justify-content: center;
   }
   .screenshot {
-max-width: 200px;
+    max-width: 200px;
   }
 
-  .contact > a >img {
+  .contact > a > img {
     max-width: 60px;
     max-height: 50px;
     margin: auto;
@@ -265,14 +290,5 @@ max-width: 200px;
   }
   p {
     font-size: 100%;
-  }
-}
-
-
-
-
-@media all and (max-width: 350px){
-  header {
-    padding-top: 45%;
   }
 }

@@ -41,13 +41,12 @@ setTimeout(function(){$("#info").fadeIn()}, 3000)
     window.open('https://symptomtracker.rambo.now.sh/');
    };
 
- 
   $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta >= 0) {
-       $('header').fadeIn()
+       $('nav').fadeIn()
     }
     else {
-        $('header').fadeOut()
+        $('nav').fadeOut()
     }
 });
 
