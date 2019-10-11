@@ -61,6 +61,9 @@ function main() {
     $('#resume-body').toggleClass('open')
     if($('#resume-body').hasClass('open')){
       document.getElementById("Resume").textContent = 'Click to Hide Resume';
+    } else {
+      document.getElementById("Resume").textContent = 'Click to Show Resume';
+
     }
   })
 }
