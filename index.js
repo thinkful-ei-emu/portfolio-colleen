@@ -6,6 +6,8 @@ function main() {
   handleAnimations();
 
   handleNavBurger();
+
+  handleToggleResume()
 }
 
 $(main);
