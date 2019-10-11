@@ -1,11 +1,49 @@
 /*disable eslint*/
 /*use global $*/
 function main() {
+  handleButtonLinks();
+
+  handleAnimations();
+
+  handleNavBurger();
+}
+
+$(main);
+
+function handleToggleResume() {
+  $("#view-resume-btn").click(function() {
+    $("#resume-body").toggleClass("open");
+    if ($("#resume-body").hasClass("open")) {
+      document.getElementById("Resume").textContent = "Click to Hide Resume";
+    } else {
+      document.getElementById("Resume").textContent = "Click to View Resume";
+    }
+  });
+}
+function handleAnimations() {
   $("#info").hide();
   setTimeout(function() {
     $("#info").fadeIn();
   }, 3000);
 
+  $(window).bind("mousewheel", function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+      $("nav").fadeIn();
+    } else {
+      $("nav").fadeOut();
+    }
+  });
+}
+function handleNavBurger() {
+  $("#nav-hamburger").click(function() {
+    $(".nav").toggleClass("open");
+  });
+
+  $("a").click(function() {
+    $(".nav").toggleClass("open");
+  });
+}
+function handleButtonLinks() {
   document.getElementById("quiz-app-github").onclick = function() {
     window.open("https://github.com/thinkful-ei-emu/ex-module2-blake-colleen");
   };
@@ -44,33 +82,4 @@ function main() {
   document.getElementById("st-app-page").onclick = function() {
     window.open("https://symptomtracker.rambo.now.sh/");
   };
-
-  $(window).bind("mousewheel", function(event) {
-    if (event.originalEvent.wheelDelta >= 0) {
-      $("nav").fadeIn();
-    } else {
-      $("nav").fadeOut();
-    }
-  });
-
-  $("#nav-hamburger").click(function() {
-    $(".nav").toggleClass("open");
-  });
-
-  $("a").click(function(){
-    $(".nav").toggleClass("open")
-  });
-  
-  $('#view-resume-btn').click(function(){
-    $('#resume-body').toggleClass('open')
-    if($('#resume-body').hasClass('open')){
-      document.getElementById("Resume").textContent = 'Click to Hide Resume';
-    } else {
-      console.log('hHii')
-      document.getElementById("Resume").textContent = 'Click to View Resume';
-
-    }
-  })
 }
-
-$(main);
