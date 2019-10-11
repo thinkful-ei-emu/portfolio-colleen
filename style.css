@@ -5,13 +5,13 @@ body {
   background-color: rgb(31, 32, 32);
   color: rgb(245, 245, 245);
 }
-/* .animated {
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-} */
+
+#nav-hamburger{
+  display: none;
+}
+.fas, .fa-bars{
+  color: white;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -67,8 +67,7 @@ ul {
   height: 50vh;
 
   display: inherit;
-  /*   width: 100vw;
- */
+  
   text-align: center;
 }
 .hide {
@@ -165,7 +164,7 @@ section {
 }
 
 button {
-  padding: 2.75%;
+  padding: 8px;
   margin: 3px;
   border: none;
   color: rgb(31, 32, 32);
@@ -174,7 +173,6 @@ button {
 }
 .project-btn{
 background-color: rgb(238, 231, 131);
-padding: 2.75% 4.2%
 }
 .front-btn{
 background-color: rgb(214, 134, 97);
@@ -257,7 +255,21 @@ button:hover {
 }
 
 @media all and (max-width: 600px) {
+  #nav-hamburger {
+    display: inline-block;
+    background-color: rgb(31, 32, 32);
+    margin: 0 auto;
+  }
+
+  .fa-bars {
+    font-size: 28px;
+  }
   .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
     flex-flow: column wrap;
     padding: 0;
   }
@@ -265,9 +277,7 @@ button:hover {
     text-align: center;
     padding: 10px;
   }
-  header {
-    padding-top: 40%;
-  }
+ 
   section {
     min-height: 100px;
   }

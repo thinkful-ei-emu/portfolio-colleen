@@ -16,7 +16,7 @@
     <title>Colleen Higgins</title>
   </head>
   <body>
-   
+    <script src="https://kit.fontawesome.com/4cffed506e.js" crossorigin="anonymous"></script>
       <header id="home-top">
           
             <div class= "header-top">  
@@ -33,7 +33,9 @@
     
 
           <nav role="navigation">
-       
+       <button id='nav-hamburger' aria-label='menu'>
+        <i class="fas fa-bars"></i>
+       </button>
               <ul class="nav animated slideInLeft">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -49,18 +51,6 @@
     <main role="main">
      
       <div class="container">
-        
-       <!--    <div class="intro">
-         
-           <p class="headline">
-            <mark class="highlight"
-              >Full-stack web developer based out of Seattle, WA.<br />
-              Fueled by problems needing solving (and strong coffee).<br />Lover
-              of dogs, rugby, and ice cream.</mark
-            >
-          </p> 
-        </div>
- -->
         <section>
           <h2 id="about">About</h2>
         </section>
@@ -156,11 +146,6 @@
               score.
             </p>
             <p>Technologies used: HTML, CSS, Javascript, webpack</p>
-            <!--   <div class='logos'>
-            <img class="logo" src="logos/HTML5_Logo_512.png" alt="HTML logo">
-            <img class="logo" src="logos/csslogo.png" alt="CSS logo">
-            <img class="logo" src="logos/logo_javascript.png" alt="javascript logo">
-          </div> -->
             <button id="quiz-app-github" class='front-btn'>Front End Code</button>
             <button id="quiz-app-page" class='project-btn'>View Project</button>
           </section>
@@ -197,5 +182,6 @@
    
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
+
   </body>
 </html>
