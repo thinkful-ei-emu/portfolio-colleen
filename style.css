@@ -6,10 +6,11 @@ body {
   color: rgb(245, 245, 245);
 }
 
-#nav-hamburger{
+#nav-hamburger {
   display: none;
 }
-.fas, .fa-bars{
+.fas,
+.fa-bars {
   color: white;
 }
 .container {
@@ -29,9 +30,6 @@ footer {
   color: rgb(170, 170, 170);
   text-align: right;
 }
-/* header {
-  padding-top: 45%;
-} */
 
 nav {
   position: fixed;
@@ -67,7 +65,7 @@ ul {
   height: 50vh;
 
   display: inherit;
-  
+
   text-align: center;
 }
 .hide {
@@ -109,7 +107,6 @@ h2 {
   color: rgb(236, 233, 236);
   margin-top: 5%;
 }
-
 
 .headline {
   color: rgb(46, 38, 15);
@@ -163,19 +160,19 @@ button {
   border-radius: 5px;
   align-self: center;
 }
-.project-btn{
-background-color: rgb(238, 231, 131);
+.project-btn {
+  background-color: rgb(238, 231, 131);
 }
-.front-btn{
-background-color: rgb(214, 134, 97);
+.front-btn {
+  background-color: rgb(214, 134, 97);
 }
-.back-btn{
-background-color: rgb(127, 160, 136);
+.back-btn {
+  background-color: rgb(127, 160, 136);
 }
 button:hover {
-  background-color:  rgb(31, 32, 32);
+  background-color: rgb(31, 32, 32);
   color: rgb(245, 245, 245);
-  font-weight: 600
+  font-weight: 600;
 }
 
 .contact {
@@ -183,7 +180,7 @@ button:hover {
   justify-content: space-around;
 }
 .email {
-  text-align: center;
+  color: rgb(170, 170, 170);
 }
 .contact > a > img {
   max-height: 80px;
@@ -194,19 +191,19 @@ iframe {
   width: 100%;
 }
 
-#view-resume-btn{
-  background-color: rgb(31, 32, 32)
+#view-resume-btn {
+  background-color: rgb(31, 32, 32);
 }
-#view-resume-btn h2:hover{
+#view-resume-btn h2:hover {
   color: rgb(214, 134, 97);
-  font-weight: 600
+  font-weight: 600;
 }
 #resume-body {
-  display:none;
+  display: none;
 }
 
-#resume-body.open{
-  display:block;
+#resume-body.open {
+  display: block;
 }
 
 @media all and (min-width: 801px) {
@@ -288,7 +285,7 @@ iframe {
     text-align: center;
     padding: 10px;
   }
- 
+
   section {
     min-height: 50px;
   }
