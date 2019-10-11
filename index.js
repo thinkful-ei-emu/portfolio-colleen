@@ -7,7 +7,7 @@ function main() {
 
   handleNavBurger();
 
-  handleToggleResume()
+  handleToggleResume();
 }
 
 $(main);
