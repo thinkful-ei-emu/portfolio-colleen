@@ -110,14 +110,6 @@ h2 {
   margin-top: 5%;
 }
 
-/* h2::before {
-  display: block;
-  content: " ";
-  margin-top: -100px;
-  height: 200px;
-  visibility: hidden;
-  pointer-events: none;
-} */
 
 .headline {
   color: rgb(46, 38, 15);
