@@ -88,10 +88,15 @@ ul {
 }
 
 #info {
-  color: white;
   font-family: "Stint Ultra Expanded", cursive;
   margin: 0 auto;
   text-align: center;
+}
+
+mark {
+  background-color: rgb(31, 32, 32);
+  color: white;
+  padding:2px;
 }
 
 #self {
