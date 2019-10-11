@@ -110,14 +110,14 @@ h2 {
   margin-top: 5%;
 }
 
-h2::before {
+/* h2::before {
   display: block;
   content: " ";
   margin-top: -100px;
   height: 200px;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .headline {
   color: rgb(46, 38, 15);
@@ -250,7 +250,7 @@ iframe {
   }
 
   section {
-    min-height: 150px;
+    min-height: 50px;
   }
   .projects {
     flex-direction: column;
@@ -298,7 +298,7 @@ iframe {
   }
  
   section {
-    min-height: 100px;
+    min-height: 50px;
   }
 
   #self {
