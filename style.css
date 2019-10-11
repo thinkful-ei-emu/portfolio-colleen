@@ -262,9 +262,7 @@ iframe {
     margin: auto;
     padding: 2%;
   }
-  .email{
-    text-align: center;
-  }
+  
 }
 
 @media all and (max-width: 600px) {
