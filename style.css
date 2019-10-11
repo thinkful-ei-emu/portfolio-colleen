@@ -180,7 +180,9 @@ button:hover {
   justify-content: space-around;
 }
 .email {
+  text-align:right;
   color: rgb(170, 170, 170);
+  padding-right:2%;
 }
 .contact > a > img {
   max-height: 80px;
@@ -259,6 +261,9 @@ iframe {
     max-height: 70px;
     margin: auto;
     padding: 2%;
+  }
+  .email{
+    text-align: center;
   }
 }
 
