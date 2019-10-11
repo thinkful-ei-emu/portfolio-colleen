@@ -57,6 +57,10 @@ function main() {
     $(".nav").toggleClass("open");
   });
 
+  $("a").click(function(){
+    $(".nav").toggleClass("open")
+  });
+  
   $('#view-resume-btn').click(function(){
     $('#resume-body').toggleClass('open')
     if($('#resume-body').hasClass('open')){
