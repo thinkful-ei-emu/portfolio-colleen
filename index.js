@@ -63,7 +63,7 @@ function main() {
       document.getElementById("Resume").textContent = 'Click to Hide Resume';
     } else {
       console.log('hHii')
-      document.getElementById("Resume").textContent = 'Click to Show Resume';
+      document.getElementById("Resume").textContent = 'Click to View Resume';
 
     }
   })
