@@ -56,6 +56,13 @@ function main() {
   $("#nav-hamburger").click(function() {
     $(".nav").toggleClass("open");
   });
+
+  $('#view-resume-btn').click(function(){
+    $('#resume-body').toggleClass('open')
+    if($('#resume-body').hasClass('open')){
+      document.getElementById("Resume").textContent = 'Click to Hide Resume';
+    }
+  })
 }
 
 $(main);

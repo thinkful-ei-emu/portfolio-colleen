@@ -198,6 +198,25 @@ button:hover {
   margin-top: 1em;
 }
 
+iframe {
+  width: 100%;
+}
+
+#view-resume-btn{
+  background-color: rgb(31, 32, 32)
+}
+#view-resume-btn h2:hover{
+  color: rgb(214, 134, 97);
+  font-weight: 600
+}
+#resume-body {
+  display:none;
+}
+
+#resume-body.open{
+  display:block;
+}
+
 @media all and (min-width: 801px) {
   #home-top {
     height: 100vh;
