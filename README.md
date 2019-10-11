@@ -1,3 +1,3 @@
 # My Portfolio
 
-Created with webpack, JavaScript, CSS, HTML
+Created with webpack, JavaScript/jQuery, CSS, HTML
